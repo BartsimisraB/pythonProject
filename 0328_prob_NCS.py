@@ -217,30 +217,112 @@
 # print(p.match("park@naver.com"))
 
 ##################################################
-# 179p
-# 1 번
+# # 179p
+# # 1 번
 # number % 2 == 1
 #
-# 2 번
+# # 2 번
 # *args , result / len(args)
 #
-# 3 번
+# # 3 번
 # 두 수를 입력한 경우 str 형으로 입력되기 때문에 3 + 6 = 36이 나온다.
 # input1, input2 = map(int, input("첫번째 숫자 입력, 두번째 숫자 입력 : ").split())
 # total = input1 + input2
 # print(total)
 #
-# 4 번
+# # 4 번
 # print("you" "need" "python")
 # print("you"+"need"+"python")
 # print("you","need","python")    # , 로 인해 공백이 추가로 생성되어 출력된다.
 # print("".join(["you","need","python"]))
 #
-# 5 번
-f1 = open("test.txt", "w")
-f1.write("Life is too short")
-f2 = open("test.txt", 'r')
-while True:
-    lines = f2.readline()
-    for line in lines:
-        print(line)
+# # 5 번
+# with open("test.txt", "w") as f1:
+#     f1.write("Life is too short")
+#
+# with open("test.txt", "r") as f2:
+#     f3 = f2.read()
+#     print(f3)
+#
+# 6 번
+# a , \n
+#
+# 7 번
+# f.read()
+# body.replace('java','python')
+# 'w'
+#
+###########################################
+# # 262p -
+# # 1 번
+# class Calculator:
+#     def __init__(self):
+#         self.value = 0
+#     def add(self, val):
+#         self.value += val
+#
+# class UpgradeCalculator(Calculator):
+#     def __init__(self):
+#         self.value = 0
+#
+#     def minus(self, val):
+#         self.value -= val
+#
+# cal = UpgradeCalculator()
+# cal.add(10)
+# cal.minus(7)
+# print(cal.value)
+#
+# # 2 번
+# class Calculator:
+#     def __init__(self):
+#         self.value = 0
+#
+#     def add(self, val):
+#         self.value += val
+#
+#
+# class MaxLimitCalculator(Calculator):
+#     def add(self, val):
+#         self.value += val
+#         if self.value > 100:
+#             self.value = 100
+#
+#
+# cal = MaxLimitCalculator()
+# cal.add(60)
+# cal.add(50)
+# print(cal.value)
+#
+# # 3 번
+#
+# 1. all 함수는 포함하고 있는 요소가 전부 참인 경우 True를 반환하고, 하나라도 거짓인 경우 False를 반환한다.
+# 요소에 0이 포함되어 있으므로 False를 반환한다.
+# 2. ord('a') 는 a 의 아스키번호 97을 반환하며, char(97)을 통해 다시 'a'가 출력된다.
+#
+# # 4 번
+#
+# a = [1, -2, 3, -5, 8, -3]
+# b = list(filter(lambda x: x > 0, a))
+# print(b)
+#
+# # 5 번
+#
+# print(int('0xea', 16))
+#
+# # 6 번
+#
+# b = [1,2,3,4]
+# a = list(map(lambda x: x * 3, b))
+# print(a)
+#
+# # 7 번
+#
+# a = [-8, 2, 7, 5, -3, 5, 0, 1]
+# a.sort()
+# print(a[0] + a[-1])
+#
+# # 8 번
+#
+# print(round(17/3, 4))
+#
