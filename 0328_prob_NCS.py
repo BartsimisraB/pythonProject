@@ -196,6 +196,42 @@
 #
 # duplicate_number()
 #
+# # 16 번
+# dic = {
+#     '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F',
+#     '--.': 'G', '....': 'H', '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L',
+#     '--': 'M', '-.': 'N', '---': 'O', '.--.': 'P', '--.-': 'Q', '.-.': 'R',
+#     '...': 'S', '-': 'T', '..-': 'U', '...-': 'V', '.--': 'W', '-..-': 'X',
+#     '-.--': 'Y', '--..': 'Z'
+# }
+# morse_input = ".... .  ... .-.. . . .--. ...  . .- .-. .-.. -.--"
+# morse_split = morse_input.split()
+# result = []
+# index = []
+# for i in range(len(morse_split)):
+#     if morse_split[i] in dic:
+#         result.append(dic[morse_split[i]])
+#
+# for i in range(0, len(morse_input) - 1):
+#     if morse_input[i] == morse_input[i + 1] == " ":
+#         index.append(i)
+#
+# for i in range(0, len(index)):
+#     result[index[i] // 4] += " "
+#
+# print(''.join(result))
+#
+# # 17 번
+#
+#  a 와 b 사이에 . 문자가 3번 이상 반복되는 문자열과 매치된다.
+#  따라서 2. a....b 가 정답
+#
+# # 18 번
+#
+# p 는 a - z 인 소문자인 영문자를 의미하기 때문에 python이 반환된다.
+# p의 인덱스는 2 = m.start(), n의 인덱스는 8 = m.end()
+# 따라서 10이 된다.
+#
 # # 19 번
 #
 # import re
@@ -215,9 +251,9 @@
 # p = re.compile(".*[@].*[.]?(.com$|.net$).*$")
 # print(p.match("park@naver.co.kr"))
 # print(p.match("park@naver.com"))
-
+#
 ##################################################
-# # 179p
+# # 179p-
 # # 1 번
 # number % 2 == 1
 #
